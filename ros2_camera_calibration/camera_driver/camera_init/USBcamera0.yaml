@@ -1,0 +1,48 @@
+%YAML:1.0
+---
+
+# USB(0)/hik(1)
+camera_type: 0
+
+# 图像分辨率、帧率
+base_info:
+  weight: 1280
+  height: 960
+  fps: 80
+
+# 曝光时间
+hik_info:
+  exposure_time: 4000
+
+# 图像协议
+pixel_format: 200 # cv::CAP_V4L2
+fourcc: ['M', 'J', 'P', 'G']
+index: 0
+
+# 相机内参矩阵
+camera_matrix: !!opencv-matrix
+  rows: 3
+  cols: 3
+  dt: d
+  data: [ 707.0175078202584, 0, 587.0166630521487,
+          0, 708.9236964765086, 433.6934491526906,
+          0, 0, 1 ]
+
+# 相机畸变矩阵
+dist_coeffs_matrix: !!opencv-matrix
+  rows: 5
+  cols: 1
+  dt: d
+  data: [ 0.08778956836724601, -0.10985182973642, -0.0005332066546966102,
+          -0.00290581053887353, 0.04195928244750036 ]
+
+# 相机位姿（坐标） 固定场景使用
+RT:
+  angle:
+    yaw: 0
+    pitch: 0
+    roll: 0
+  pos:
+    x: 0
+    y: 0
+    z: 0

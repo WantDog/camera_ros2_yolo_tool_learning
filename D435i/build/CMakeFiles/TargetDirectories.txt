@@ -1,0 +1,3 @@
+/home/lzy/Desktop/github/D435i/build/CMakeFiles/main.dir
+/home/lzy/Desktop/github/D435i/build/CMakeFiles/edit_cache.dir
+/home/lzy/Desktop/github/D435i/build/CMakeFiles/rebuild_cache.dir

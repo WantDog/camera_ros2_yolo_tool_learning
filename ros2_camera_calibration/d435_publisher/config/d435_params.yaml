@@ -1,0 +1,24 @@
+# Intel RealSense D435 相机参数配置
+
+d435_publisher:
+  ros__parameters:
+    # 图像分辨率设置
+    width: 640          # 图像宽度 (可选: 424, 640, 848, 1280)
+    height: 480         # 图像高度 (可选: 240, 480, 480, 720)
+    fps: 30             # 帧率 (可选: 6, 15, 30, 60)
+    
+    # 功能开关
+    enable_depth: false # 是否启用深度流 (标定时通常设为false)
+    
+    # 相机标定文件路径 (可选)
+    camera_info_url: ""
+
+# 标定专用配置
+d435_calibration_publisher:
+  ros__parameters:
+    # 标定推荐使用高分辨率
+    width: 1280
+    height: 720
+    fps: 15
+    enable_depth: false
+    camera_info_url: ""

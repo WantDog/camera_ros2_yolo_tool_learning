@@ -1,0 +1,4 @@
+{
+    "kiroAgent.configureMCP": "Disabled",
+    "cmake.sourceDirectory": "/home/lzy/Desktop/github/ros2_camera_calibration/camera_driver"
+}
